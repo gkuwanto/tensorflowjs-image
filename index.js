@@ -2,8 +2,6 @@ let net;
 
 const webcamElement = document.getElementById('webcam');
 
-
-
 async function app() {
   console.log('Loading mobilenet..');
 
@@ -33,7 +31,7 @@ async function setupWebcam() {
         navigatorAny.webkitGetUserMedia || navigatorAny.mozGetUserMedia ||
         navigatorAny.msGetUserMedia;
     if (navigator.getUserMedia) {
-      navigator.getUserMedia({video: true},
+      navigator.getUserMedia({video: 'enviroment'},
         stream => {
           webcamElement.srcObject = stream;
           webcamElement.addEventListener('loadeddata',  () => resolve(), false);

@@ -1,14 +1,20 @@
 <html>
   <head>
     <!-- Load the latest version of TensorFlow.js -->
+    <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
   </head>
   <body>
-    <div id="console"></div>
-    <!-- Add the video tag for webcam -->
-    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-    <!-- Load index.js after the content of the page -->
-    <script src="index.js"></script>
+    <div class="navbar">
+      <h1>Image Classifier</h1>
+    </div>
+    <div class="container">
+      <div id="console"></div>
+      <!-- Add the video tag for webcam -->
+      <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+      <!-- Load index.js after the content of the page -->
+      <script src="index.js"></script>
+    </div>
   </body>
 </html>

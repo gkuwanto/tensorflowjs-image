@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#console {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    background-color: #0066ff;
+    margin:0.1;
+    padding: 0.25%;
+}
+
+.navbar h1 {
+    color:white;
+}

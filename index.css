@@ -21,4 +21,29 @@ body{
 
 .navbar h1 {
     color:white;
+    margin-left: 2vw;
+}
+
+.train-buttons{
+    display:flex;
+    width:75vw;
+    justify-content: center;
+}
+
+.train-buttons button{
+    margin: 2%;
+    font-size: 2rem;
+    border:0;
+    padding:1%;
+    background-color: #0066ff;
+    width: 10vw;
+}
+
+@media only screen {
+    .train-buttons {
+        flex-direction: column;
+    }
+    .train-buttons button{
+        width: 70vw;
+    }
 }
